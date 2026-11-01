@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "conversational-rag"
+version = "0.1.0"
+description = "Extensible conversational retrieval-augmented generation research system"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7,<9"]
+qrecc = ["datasets>=2.19,<4"]
+ann = ["faiss-cpu>=1.8,<2", "numpy>=1.25,<2"]
+
+[project.scripts]
+rag = "rag.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,0 +1,33 @@
+{
+  "dataset": "fruit-demo",
+  "split": "demonstration-only",
+  "description": "人工编写的流程测试集，语料仅含一个片段，不可用于结论或模型排名。",
+  "records": [
+    {
+      "id": "fruit:1:1", "conversation_id": "fruit:1",
+      "question": "苹果有哪些颜色？", "history": [],
+      "human_rewrite": "苹果有哪些颜色？", "reference_answer": "红色、绿色和黄色",
+      "relevant_sources": ["fruit.md"]
+    },
+    {
+      "id": "fruit:1:2", "conversation_id": "fruit:1",
+      "question": "它属于什么科？",
+      "history": [{"role": "user", "content": "苹果有哪些颜色？"}, {"role": "assistant", "content": "红色、绿色和黄色"}],
+      "human_rewrite": "苹果属于什么科？", "reference_answer": "蔷薇科",
+      "relevant_sources": ["fruit.md"]
+    },
+    {
+      "id": "fruit:2:1", "conversation_id": "fruit:2",
+      "question": "香蕉属于什么属？", "history": [],
+      "human_rewrite": "香蕉属于什么属？", "reference_answer": "芭蕉属",
+      "relevant_sources": ["fruit.md"]
+    },
+    {
+      "id": "fruit:2:2", "conversation_id": "fruit:2",
+      "question": "成熟后是什么颜色？",
+      "history": [{"role": "user", "content": "香蕉属于什么属？"}, {"role": "assistant", "content": "芭蕉属"}],
+      "human_rewrite": "香蕉成熟后是什么颜色？", "reference_answer": "黄色",
+      "relevant_sources": ["fruit.md"]
+    }
+  ]
+}

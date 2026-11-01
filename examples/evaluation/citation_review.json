@@ -1,0 +1,11 @@
+{
+  "purpose": "人工编写的可靠性检查示例；语义标签仅用于人工评审，不会被程序视为自动验证。",
+  "cases": [
+    {"id":"supported", "question":"苹果属于什么科？", "evidence":[{"id":1,"text":"苹果是蔷薇科苹果属植物的果实。"}], "answer":"苹果属于蔷薇科[1]。", "citation_structure":"valid", "human_support_label":"supported"},
+    {"id":"wrong_number", "question":"苹果属于什么科？", "evidence":[{"id":1,"text":"苹果是蔷薇科苹果属植物的果实。"}], "answer":"苹果属于蔷薇科[4]。", "citation_structure":"invalid", "human_support_label":"no_valid_citation"},
+    {"id":"unsupported_claim", "question":"苹果原产哪里？", "evidence":[{"id":1,"text":"苹果是蔷薇科苹果属植物的果实。"}], "answer":"苹果原产法国[1]。", "citation_structure":"valid", "human_support_label":"unsupported"},
+    {"id":"partially_supported", "question":"苹果是什么科、原产哪里？", "evidence":[{"id":1,"text":"苹果是蔷薇科苹果属植物的果实。"}], "answer":"苹果属于蔷薇科，原产法国[1]。", "citation_structure":"valid", "human_support_label":"partially_supported"},
+    {"id":"abstention", "question":"苹果原产哪里？", "evidence":[{"id":1,"text":"苹果是蔷薇科苹果属植物的果实。"}], "answer":"资料未说明苹果原产地。", "citation_structure":"none", "human_support_label":"appropriate_abstention"},
+    {"id":"unrelated", "question":"火星有几颗卫星？", "evidence":[], "answer":"未检索到资料，无法回答。", "citation_structure":"none", "human_support_label":"appropriate_abstention"}
+  ]
+}

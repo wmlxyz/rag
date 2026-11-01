@@ -1,0 +1,26 @@
+{
+  "generation": {
+    "provider": "openai_compatible",
+    "base_url_env": "LLM_BASE_URL",
+    "api_key_env": "LLM_API_KEY",
+    "model_env": "LLM_MODEL",
+    "timeout_seconds": 60,
+    "max_retries": 2
+  },
+  "reranker": {
+    "provider": "dashscope_rerank",
+    "base_url_env": "RERANK_BASE_URL",
+    "api_key_env": "RERANK_API_KEY",
+    "model_env": "RERANK_MODEL",
+    "timeout_seconds": 60,
+    "max_retries": 2
+  },
+  "embedding": {
+    "provider": "openai_compatible",
+    "base_url_env": "EMBEDDING_BASE_URL",
+    "api_key_env": "EMBEDDING_API_KEY",
+    "model_env": "EMBEDDING_MODEL",
+    "timeout_seconds": 60,
+    "max_retries": 2
+  }
+}

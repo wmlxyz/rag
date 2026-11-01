@@ -1,0 +1,13 @@
+{
+  "description": "手工构造的规则回归案例，不是模型质量的统计评测；通过规则并不保证语义忠实。",
+  "cases": [
+    {"id":"coreference", "type":"指代", "question":"What did she release?", "rewrite":"What did Alice release?", "rule_expected":"pass"},
+    {"id":"ellipsis", "type":"省略", "question":"When was it released?", "rewrite":"When was the album released?", "rule_expected":"pass"},
+    {"id":"topic_change", "type":"话题切换", "question":"What is the capital of France?", "rewrite":"What is the capital of France?", "rule_expected":"pass"},
+    {"id":"answer_instead", "type":"改写成答案", "question":"What is one of her albums?", "rewrite":"Concentration 20", "rule_expected":"question_to_nonquestion"},
+    {"id":"missing_year", "type":"时间条件", "question":"What happened in 1999?", "rewrite":"What happened to Alice?", "rule_expected":"number_omitted"},
+    {"id":"missing_negation", "type":"否定", "question":"Did he not attend?", "rewrite":"Did Alex attend?", "rule_expected":"negation_omitted"},
+    {"id":"chinese", "type":"中文指代", "question":"它属于什么科？", "rewrite":"苹果属于什么科？", "rule_expected":"pass"},
+    {"id":"undetected_drift", "type":"语义错误未必可检测", "question":"What did she release?", "rewrite":"What did Bob purchase?", "rule_expected":"pass", "human_note":"规则通过但实体和动作已改变。"}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "description": "仅用于 fruit.md 的人工构造示例，标签表示该文件是否包含足够信息，不适用于其他知识库。",
+  "records": [
+    {"id":"d1","split":"dev","question":"苹果属于什么科？","answerable":true},
+    {"id":"d2","split":"dev","question":"成熟香蕉通常是什么颜色？","answerable":true},
+    {"id":"d3","split":"dev","question":"苹果果皮可能是什么颜色？","answerable":true},
+    {"id":"d4","split":"dev","question":"香蕉属于什么属？","answerable":true},
+    {"id":"d5","split":"dev","question":"苹果原产于哪个国家？","answerable":false},
+    {"id":"d6","split":"dev","question":"香蕉的维生素含量是多少？","answerable":false},
+    {"id":"d7","split":"dev","question":"火星有多少颗卫星？","answerable":false},
+    {"id":"d8","split":"dev","question":"中国的首都在哪里？","answerable":false},
+    {"id":"v1","split":"validation","question":"香蕉属于什么科？","answerable":true},
+    {"id":"v2","split":"validation","question":"苹果是苹果属植物的果实吗？","answerable":true},
+    {"id":"v3","split":"validation","question":"苹果每公斤的价格是多少？","answerable":false},
+    {"id":"v4","split":"validation","question":"香蕉最早在哪里种植？","answerable":false}
+  ]
+}
